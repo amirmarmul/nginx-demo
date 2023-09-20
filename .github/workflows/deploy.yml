@@ -24,4 +24,4 @@ jobs:
         run: git config --global --add safe.directory /__w/nginx-demo/nginx-demo
       - 
         name: Run Deployment
-        run: kamal deploy
+        run: kamal setup
