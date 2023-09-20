@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: kacestudio/laravel-deploy-runner:latest
+    env:
+      DOCKER_REGISTRY_PASSWORD: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
     steps:
       -
         name: Checkout code
